@@ -1,0 +1,13 @@
+*{margin: 0; padding: 0;}
+ul,ol{ list-style: none;}
+img{ display: block;}
+
+#login,#register{ width:400px; margin:30px auto;}
+
+#content{ height: calc(100vh - 56px);}
+#content .welcome{position: absolute;top:200px;left: 50%;transform: translateX(-50%); font-size: 30px;}
+#content nav {margin-bottom: -9999px;padding-bottom: 9999px; overflow: hidden;} /* 登高布局 */
+#content main {margin-bottom: -9999px;padding-bottom: 9999px;position: relative; overflow: hidden;}
+
+.breadcrumb{background: transparent;}
+#menu .active{text-decoration: underline;font-size: 20px;}
