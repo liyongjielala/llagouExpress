@@ -9,6 +9,9 @@ var upload = multer({ dest: './public/uploads/' }) //接收到文件存放我的
 router.post('/add', upload.single('companyLogo'),controllerPost.add);
 //职位更新功能
 router.post('/update', upload.single('companyLogo'),controllerPost.update);
+//职位删除功能
+router.get('/remove',controllerPost.remove);
+
 
 
 module.exports = router;

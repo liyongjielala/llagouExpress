@@ -62,8 +62,26 @@ var update = (req,res,next)=>{
     })
   }
 }
+var remove = (req,res,next)=>{
+  var query = req.query;
 
+  PostModel.deleteOne(query).then((info)=>{
+    res.send({
+      code:0,
+      errmsg :'Ok'
+    })
+  }).catch((err)=>{
+    res.send({
+      code:-1,
+      errmsg:"not remove"
+    })
+
+  })
+
+
+}
 module.exports = {
   add,
-  update
+  update,
+  remove
 };
